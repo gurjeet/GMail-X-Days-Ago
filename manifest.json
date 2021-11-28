@@ -1,21 +1,27 @@
 {
   "manifest_version": 2,
-  "name": "chillout-page-action",
+  "author": "gurjeet@singh.im",
+  "name": "GMail X Days Ago",
   "version": "1.0",
-  "description": "Show a page action after a period of inactivity. Show cat gifs when the page action is clicked.",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/chill-out",
+  "description": "Show emails from some days ago",
+  "homepage_url": "https://q.ht/gmail-x-days-ago",
   "icons": {
-    "48": "icons/chillout-48.png"
+    "32": "icons/calendar-email-32.png"
   },
 
   "permissions": [
-    "alarms",
+    "https://mail.google.com/*",
     "tabs"
   ],
 
   "page_action": {
-    "default_icon": "icons/chillout-32.png",
-    "default_title": "Chill out"
+    "default_title": "GMail X Days Ago",
+    "default_popup": "index.html",
+    "show_matches": ["https://mail.google.com/*"],
+    "default_icon": {
+      "icons/calendar-email-32.png",
+      "icons/calendar-email-16.png"
+    }
   },
 
   "background": {
