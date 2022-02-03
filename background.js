@@ -46,6 +46,8 @@ restartAlarm: clear all alarms,
 then set a new alarm for the given tab.
 */
 function restartAlarm(tabId) {
+    browser.pageAction.show(tabId);
+    return;
   browser.pageAction.hide(tabId);
   browser.alarms.clearAll();
   var gettingTab = browser.tabs.get(tabId);

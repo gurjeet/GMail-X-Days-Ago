@@ -19,8 +19,8 @@
     "default_popup": "index.html",
     "show_matches": ["https://mail.google.com/*"],
     "default_icon": {
-      "icons/calendar-email-32.png",
-      "icons/calendar-email-16.png"
+      "32":  "icons/calendar-email-32.png",
+      "16":  "icons/calendar-email-16.png"
     }
   },
 
